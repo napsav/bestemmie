@@ -1,15 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!-- You need UTF-8 here because you use some characters not in ASCII -->
+
 <meta http-equiv="content-type" content="text/html; charset=UTF8">
 <script>
-/*
-    Math.random() returns a number between 0 and 1 excluding 1 itself.
-    That together with floor function returns a number between 0 and
-    max-1 (here max = sentence.length) and fits the zero-based numbering
-    of the elements in the array
-*/
+
 function getRandomSentence () {
     var index= Math.floor(Math.random() * (sentences.length));
     return sentences[index];
@@ -45,7 +40,7 @@ function scribble(){
 </script>
 </head>
 <body>
-<br>
+PROVA<br>
 <canvas id="woodcut" width="1000" height="100"
 style="border:10px solid #665599;">
 This text shows up if the canvas element is  not supported
@@ -54,7 +49,7 @@ This text shows up if the canvas element is  not supported
 <h2>Benvenuto nel covo delle bestemmie!</h2>
 <p>Il sito è in costruzione, ritorna tra poco per nuove bestemmie creative!</p>
 <br>
-<button onclick="scribble()">scribble</button>
+<button onclick="scribble()">Bestemmia!</button>
 
 
 </body>
