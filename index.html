@@ -1,41 +1,44 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-<title>Bestemmia!</title>
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<!-- Bootstrap CSS -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<title>Bestemmia!</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<!-- Place this tag in your head or just before your close body tag. -->
+	<script async defer src="https://buttons.github.io/buttons.js"></script>
 </head>
 <body>
-<div class="container">
-<br>
-<h2 style="text-align:center">Benvenuto nel covo delle bestemmie!</h2>
-<p>Il sito è ancora in costruzione, ritorna tra poco per nuove bestemmie creative! Per iniziare premi il tasto sotto per scegliere una bestemmia a caso. Le bestemmie sono scelte totalmente a caso, per questo motivo la stessa potrebbe essere scelta più volte.</p>
-<br>
-<p id="frase" style ="font-size: 24px; font-weight: bold; color: red;text-align:center;"></p>
-<button type="button" class="btn btn-outline-primary btn-lg btn-block" onclick="bestemmia()">Bestemmia!</button>
-<br>
-Sito scritto da Saverio Napolitano, bestemmiatori: Francesco Acierno. Per contribuire alla collezione, invia una mail <a href="mailto:savi.napolitano@protonmail.com">qui</a>
-</div>
-<script>
-var sentences= [
-	"Mneg chillu puorc spurc Sant'Adalberto di Praga che sputava sangue da ogni buco creato da non so quante frecce sparate da dei grandi soldati romani che svolgevano il loro fantastico compito \n\r - Francesco Acierno",
-	"Mneg chella puttan orfan e Santa Flavia Domitilla cugina dell'imperatore Domiziano ma nonostante ciò questo nobile e giusto imperatore rilegò questa puttana non si sa se a Ponza o a Ventotene \n\r - Francesco Acierno",
-	"Quel porco del gesuita San Luigi di Gonzaga perché al posto di dedicarsi alla vita religiosa ed entrare nel mondo di dio non ereditò il principato di Castiglione, essendo primo di 8 figli, ceh cazzo primo di 8 FIGLI?! \n\r - Francesco Acierno",
-	"Come cazzo si fa a santificare uno come quel bastardo di San Francesco il cui unico potere era quello di parlare con un lupo bastardo; ceh potrebbe essere definito un cocainomane. \n\r - Francesco Acierno",
-	"Mneg chella puttan e Santa Filomena, principessa sul pisello di Corfù, la quale rifiutò l’imperatore, ripeto l’IMPERATORE Diocleziano per sposarsi con quel porco di Gesù. Giustamente fu martoriata al meglio, ma resistette e sopravvisse alla flagellazione, alle frecce, ad un annegamento, e infine fu decapitata. Se questa non è una strega ditemi cos’è?! \n\r - Francesco Acierno"
-];
-var frase_render = document.getElementById('frase'); 
-function getRandomSentence () {
-    var index= Math.floor(Math.random() * (sentences.length));
-    return sentences[index];
-}
-function bestemmia () {
-	frase_render.innerHTML = getRandomSentence();
-}
-</script>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<div class="container">
+		<br>
+		<h2 style="text-align:center">Benvenuto nel covo delle bestemmie!</h2>
+		<p>Il sito è ancora in costruzione, ritorna tra poco per nuove bestemmie creative! Per iniziare premi il tasto sotto per scegliere una bestemmia a caso. Le bestemmie sono scelte totalmente a caso, per questo motivo la stessa potrebbe essere scelta più volte.</p>
+		<br>
+		<p id="frase" style ="font-size: 24px; font-weight: bold; color: red;text-align:center;"></p>
+		<button type="button" class="btn btn-outline-primary btn-lg btn-block" onclick="bestemmia()">Bestemmia!</button>
+		<br>
+		Sito scritto da Saverio Napolitano, bestemmiatori: Francesco Acierno. Per contribuire alla collezione, invia una mail <a href="mailto:savi.napolitano@protonmail.com">qui</a>		
+		<a class="github-button" href="https://github.com/napsav" data-color-scheme="no-preference: light; light: light; dark: dark;" aria-label="Follow @napsav on GitHub">Follow @napsav</a><a class="github-button" href="https://github.com/napsav/bestemmie/subscription" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-eye" aria-label="Watch napsav/bestemmie on GitHub">Watch</a>
+	</div>
+	<script>
+		var sentences= [
+			"Mneg chillu puorc spurc Sant'Adalberto di Praga che sputava sangue da ogni buco creato da non so quante frecce sparate da dei grandi soldati romani che svolgevano il loro fantastico compito \n\r - Francesco Acierno",
+			"Mneg chella puttan orfan e Santa Flavia Domitilla cugina dell'imperatore Domiziano ma nonostante ciò questo nobile e giusto imperatore rilegò questa puttana non si sa se a Ponza o a Ventotene \n\r - Francesco Acierno",
+			"Quel porco del gesuita San Luigi di Gonzaga perché al posto di dedicarsi alla vita religiosa ed entrare nel mondo di dio non ereditò il principato di Castiglione, essendo primo di 8 figli, ceh cazzo primo di 8 FIGLI?! \n\r - Francesco Acierno",
+			"Come cazzo si fa a santificare uno come quel bastardo di San Francesco il cui unico potere era quello di parlare con un lupo bastardo; ceh potrebbe essere definito un cocainomane. \n\r - Francesco Acierno",
+			"Mneg chella puttan e Santa Filomena, principessa sul pisello di Corfù, la quale rifiutò l’imperatore, ripeto l’IMPERATORE Diocleziano per sposarsi con quel porco di Gesù. Giustamente fu martoriata al meglio, ma resistette e sopravvisse alla flagellazione, alle frecce, ad un annegamento, e infine fu decapitata. Se questa non è una strega ditemi cos’è?! \n\r - Francesco Acierno"
+		];
+		var frase_render = document.getElementById('frase'); 
+		function getRandomSentence () {
+		    var index= Math.floor(Math.random() * (sentences.length));
+		    return sentences[index];
+		}
+		function bestemmia () {
+			frase_render.innerHTML = getRandomSentence();
+		}
+	</script>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
