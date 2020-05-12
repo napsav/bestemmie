@@ -3,13 +3,18 @@
 <head>
 
 <meta http-equiv="content-type" content="text/html; charset=UTF8">
+
+</head>
+<body>
+<br>
+
+<br>
+<h2>Benvenuto nel covo delle bestemmie!</h2>
+<p>Il sito è in costruzione, ritorna tra poco per nuove bestemmie creative!</p>
+<br>
+<p id="frase"></p>
+<button onclick="bestemmia()">Bestemmia!</button>
 <script>
-
-function getRandomSentence () {
-    var index= Math.floor(Math.random() * (sentences.length));
-    return sentences[index];
-}
-
 var sentences= [
 	'prova 1',
 	'prova 2',
@@ -18,39 +23,21 @@ var sentences= [
 	'grande testa di cazzo'
 ];
 
-function scribble(){
-  // get the canvas element you want to write to
-  var canvas = document.getElementById("woodcut");
-  // get a handle for the above canvas (here 2d only for simple text)
-  var context = canvas.getContext("2d");
-  // the canvas is blank the first time only, so erase the content
-  // even if it is already blank, checking for it would be more
-  // complicated and slower, too
-  context.clearRect(0, 0, canvas.width, canvas.height);
-  // choose a font (you can choose the size also as you can see)
-  context.font = "30px Arial";
-  // the letters are filled and they are filled in red
-  context.fillStyle = "red";
-  // center the text horizontally
-  context.textAlign = "right";
-  // put a random line in the middle of the canvas
-  // the +10 account for the fonttype's height
-  context.fillText(getRandomSentence(),0, canvas.height/2 + 10);
+var frase_render = document.getElementById('frase'); 
+function getRandomSentence () {
+    var index= Math.floor(Math.random() * (sentences.length));
+    return sentences[index];
 }
-</script>
-</head>
-<body>
-PROVA<br>
-<canvas id="woodcut" width="1000" height="100"
-style="border:10px solid #665599;">
-This text shows up if the canvas element is  not supported
-</canvas>
-<br>
-<h2>Benvenuto nel covo delle bestemmie!</h2>
-<p>Il sito è in costruzione, ritorna tra poco per nuove bestemmie creative!</p>
-<br>
-<button onclick="scribble()">Bestemmia!</button>
 
+function bestemmia () {
+	frase_render.innerHTML = getRandomSentence();
+}
+
+
+
+
+
+</script>
 
 </body>
 </html>
