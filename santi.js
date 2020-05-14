@@ -32,7 +32,7 @@ var aggettivi = [
 	"bestemmiatore ",
 	"pedofilo ",
 	"razzista ",
-	"archico ",
+	"anarchico ",
 	"traditore ",
 	"meschino "
 ];
