@@ -5,6 +5,9 @@ var santi = [
 	"San Giuseppe ",
 	"San Francesco ",
 	"San Giorgio ",
+	"San Riccardo ",
+	"San Vincenzo ",
+	"Sant'Euplio "
 ];
 function getRandomSanto () {
     var index= Math.floor(Math.random() * (santi.length));
