@@ -5,14 +5,13 @@ var santi = [
 	"San Giuseppe ",
 	"San Francesco ",
 	"San Giorgio ",
-	"San Uwu "
 ];
 function getRandomSanto () {
     var index= Math.floor(Math.random() * (santi.length));
     return santi[index];
 }
 var nomi = [
-	"il burgiardo ",
+	"il bugiardo ",
 	"il criminale ",
 	"il ladro ",
 	"il porco ",
@@ -31,9 +30,7 @@ var aggettivi = [
 	"pedofilo ",
 	"razzista ",
 	"archico ",
-	"uwu ",
 	"traditore ",
-	":/ ",
 	"meschino "
 ];
 function getRandomAggettivo () {
