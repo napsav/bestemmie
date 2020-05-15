@@ -1046,5 +1046,5 @@ function getRandomAggettivo () {
 }
 var santi_render = document.getElementById('santi');
 function santifica () {
-	santi_render.innerHTML = getRandomSanto() + " " + getRandomNome() + getRandomAggettivo();
+	santi_render.innerHTML = getRandomSanto() + " " + getRandomNome() + " " + getRandomAggettivo();
 }
