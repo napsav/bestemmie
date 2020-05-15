@@ -968,8 +968,8 @@ var santi = [
 	"Zaccheo"
 ];
 function getRandomSanto () {
-    var index= Math.floor(Math.random() * (santi.length));
-    return santi[index];
+    var indexsanto= Math.floor(Math.random() * (santi.length));
+    return santi[indexsanto];
 }
 var nomi = [
 	"il bugiardo",
@@ -1026,8 +1026,8 @@ var nomi = [
 	"lo scostumato"
 ];
 function getRandomNome () {
-    var index= Math.floor(Math.random() * (nomi.length));
-    return nomi[index];
+    var indexnomi= Math.floor(Math.random() * (nomi.length));
+    return nomi[indexnomi];
 }
 var aggettivi = [
 	"bastardo",
@@ -1247,8 +1247,8 @@ var aggettivi = [
 	"insano"
 ];
 function getRandomAggettivo () {
-     var index= Math.floor(Math.random() * (aggettivi.length));
-     return aggettivi[index];
+     var indexagg= Math.floor(Math.random() * (aggettivi.length));
+     return aggettivi[indexagg];
 }
 var santi_render = document.getElementById('santi');
 function santifica () {
