@@ -1,13 +1,13 @@
 var santi = [
-	"Sant'Ambrogio ",
-	"San Francesco Saverio ",
-	"Sant'Antonio ",
-	"San Giuseppe ",
-	"San Francesco ",
-	"San Giorgio ",
-	"San Riccardo ",
-	"San Vincenzo ",
-	"Sant'Euplio "
+	"Sant'Ambrogio",
+	"San Francesco Saverio",
+	"Sant'Antonio",
+	"San Giuseppe",
+	"San Francesco",
+	"San Giorgio",
+	"San Riccardo",
+	"San Vincenzo",
+	"Sant'Euplio",
 	"Maria Vergine",
 	"Maria di Cleofa",
 	"Papa Adeodato I",
@@ -1000,5 +1000,5 @@ function getRandomAggettivo () {
 }
 var santi_render = document.getElementById('santi');
 function santifica () {
-	santi_render.innerHTML = getRandomSanto() + getRandomNome() + getRandomAggettivo();
+	santi_render.innerHTML = getRandomSanto() + " " + getRandomNome() + getRandomAggettivo();
 }
